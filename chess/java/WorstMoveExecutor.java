@@ -33,7 +33,7 @@ public class WorstMoveExecutor implements Executor {
                 ans = cur;
             }
         }
-        if (move.dif() * (move.getColor() == Color.BLACK ? -11 : 1) < ans.dif()) {
+        if (move.dif() * (move.getColor() == Color.BLACK ? -1 : 1) < ans.dif()) {
             ans = move;
         }
         return ans;
